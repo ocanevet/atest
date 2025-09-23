@@ -33,6 +33,7 @@ theme:
 
 nav:
   - "Home": README.md
+  - "About": about.md
 
 
 markdown_extensions:
