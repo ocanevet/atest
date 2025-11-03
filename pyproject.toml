@@ -23,7 +23,7 @@ requires-python = ">= 3.10"
 dynamic = ["dependencies"]
 
 [tool.setuptools]
-packages = ["ztest"]
+packages = ["ztest", "ztest.scripts"]
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
