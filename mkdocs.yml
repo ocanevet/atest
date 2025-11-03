@@ -33,6 +33,8 @@ theme:
 
 nav:
   - "Home": README.md
+  - "Installation": install.md
+  - "Usage": usage.md
   - "About": about.md
 
 

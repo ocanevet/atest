@@ -9,5 +9,5 @@ pip install --extra-index-url https://test.pypi.org/simple/ ztest
 ## Usage
 
 ```bash
-zsum 3 4
+zsum -a 3 -b 4
 ```
