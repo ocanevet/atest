@@ -6,6 +6,8 @@
 
 import argparse
 
+from loguru import logger
+
 import ztest
 
 
@@ -17,7 +19,7 @@ def main():
 
     op = ztest.Sum()
     s = op(args.a, args.b)
-    print(f"s {s}")
+    logger.info(f"The sum is {s}")
 
 
 if __name__ == "__main__":
