@@ -1,3 +1,0 @@
-# About
-
-It's me.
