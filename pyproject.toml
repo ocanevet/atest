@@ -12,7 +12,9 @@ description = "A test package to test GitHub Actions"
 version = "0.0.13"
 readme = "README.md"
 license = { file = "LICENSE" }
-authors = [{name = "Olivier Canévet", email = "olivier.canevet@idiap.ch"}]
+authors = [
+    { name = "Olivier Canévet", email = "olivier.canevet@idiap.ch" }
+]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
