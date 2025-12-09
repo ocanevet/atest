@@ -10,6 +10,8 @@ on:
   push:
     paths:
       - "pyproject.toml"
+  release:
+    types: [published]
 
 jobs:
   build:
