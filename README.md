@@ -1,3 +1,5 @@
+<img src="https://ocanevet.github.io/atest/assets/images/banner.jpg" alt="" width="100%"/>
+
 # Test
 
 **Documentation:** <https://ocanevet.github.io/atest/>
