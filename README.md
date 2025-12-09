@@ -17,3 +17,10 @@ pip install --extra-index-url https://test.pypi.org/simple/ ztest
 ```bash
 zsum -a 3 -b 4
 ```
+
+## Images
+
+This is an example of image to see whether it will be properly updated
+on next push on PyPi.
+
+![Screen](./docs/assets/images/screen.png)
