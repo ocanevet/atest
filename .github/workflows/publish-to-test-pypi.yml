@@ -34,6 +34,7 @@ jobs:
       run: |
         perl -i.bak -pe 's/\[(.*)\]\((?!http)\.?\/?(.*)\.([a-z]+)\)/[\1](https:\/\/raw.github.com\/ocanevet\/atest\/${{ github.event.release.tag_name }}\/\2.\3)/g' README.md
         perl -i.bak -pe 's/\[(.*)\]\((?!http)\.?\/?(.*)\)/[\1](https:\/\/github.com\/ocanevet\/atest\/tree\/${{ github.event.release.tag_name }}\/\2)/g' README.md
+        cat README.md
         rm README.md.bak
     - name: Build a binary wheel and a source tarball
       run: python3 -m build
