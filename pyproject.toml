@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ztest"
 description = "A test package to test GitHub Actions"
-version = "0.0.12"
+version = "0.0.13"
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [{name = "Olivier Canévet", email = "olivier.canevet@idiap.ch"}]
