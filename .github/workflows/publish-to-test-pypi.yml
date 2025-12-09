@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Idiap Research Institute <contact@idiap.ch>
+# SPDX-FileContributor: Olivier Canévet <olivier.canevet@idiap.ch>
+# SPDX-FileContributor: Yannick Dayer <yannick.dayer@idiap.ch>
+# SPDX-License-Identifier: See LICENSE file
+
 name: Publish Python distribution to TestPyPI
 
 # on: push
@@ -25,6 +30,11 @@ jobs:
         pip install
         build
         --user
+    - name: Patch the README links to point to the correct files at the current tag
+      run: |
+        perl -i.bak -pe 's/\[(.*)\]\((?!http)\.?\/?(.*)\.([a-z]+)\)/[\1](https:\/\/raw.github.com\/idiap\/RawSpeechClassification\/${{ github.event.release.tag_name }}\/\2.\3)/g' README.md
+        perl -i.bak -pe 's/\[(.*)\]\((?!http)\.?\/?(.*)\)/[\1](https:\/\/github.com\/idiap\/RawSpeechClassification\/tree\/${{ github.event.release.tag_name }}\/\2)/g' README.md
+        rm README.md.bak
     - name: Build a binary wheel and a source tarball
       run: python3 -m build
     - name: Store the distribution packages
