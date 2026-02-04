@@ -1,4 +1,4 @@
-<img src="https://ocanevet.github.io/atest/assets/images/banner.jpg" alt="" width="100%"/>
+<img src="./docs/assets/images/banner.jpg" alt="" width="100%"/>
 
 # Test
 
